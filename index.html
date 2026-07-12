@@ -1178,18 +1178,48 @@ CONTACT
           });
         }
 
-        // Mobile Slick Slider
-        if ($(window).width() <= 768) {
-          $(".mobile-slider").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            dots: false,
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-          });
+      //   // Mobile Slick Slider
+      //   if ($(window).width() <= 768) {
+      //     $(".mobile-slider").slick({
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       arrows: true,
+      //       dots: false,
+      //       infinite: true,
+      //       autoplay: true,
+      //       autoplaySpeed: 3000,
+      //     });
+      //   }
+    </script>
+    <script>
+      $(document).ready(function () {
+        function initMobileSlider() {
+          if ($(window).width() <= 768) {
+            if (!$(".mobile-slider").hasClass("slick-initialized")) {
+              $(".mobile-slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+              });
+            }
+          } else {
+            if ($(".mobile-slider").hasClass("slick-initialized")) {
+              $(".mobile-slider").slick("unslick");
+            }
+          }
         }
+
+        // Page Load
+        initMobileSlider();
+
+        // Window Resize
+        $(window).on("resize", function () {
+          initMobileSlider();
+        });
       });
     </script>
   </body>

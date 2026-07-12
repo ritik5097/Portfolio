@@ -1045,9 +1045,12 @@ EXPERIENCE
 .mt-10 {
   margin-top: 10px;
 }
-.process,
+
 .experience {
   padding-bottom: 50px;
+}
+.process {
+  padding-bottom: 0;
 }
 .counter-box {
   background: linear-gradient(145deg, #10243d, #162e4d);
@@ -2021,7 +2024,11 @@ FAQ
   /* .faq-heading h2 {
     font-size: 36px;
   } */
-
+  .service-card,
+  .why-card,
+  .process-card {
+    margin: 0px 10px;
+  }
   .faq-question {
     padding: 22px;
     font-size: 17px;
