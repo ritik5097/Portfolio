@@ -1369,7 +1369,7 @@ MY PROCESS
 BRANDS
 ==============================*/
 .brands {
-  display: none;
+  display: none !important;
 }
 .brand-slider {
   overflow: visible;
