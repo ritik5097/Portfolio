@@ -1368,7 +1368,9 @@ MY PROCESS
 /*==============================
 BRANDS
 ==============================*/
-
+.brands {
+  display: none;
+}
 .brand-slider {
   overflow: visible;
 
