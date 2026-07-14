@@ -580,6 +580,7 @@ SKILLS
 
 .skills-grid {
   display: grid;
+  overflow: visible !important;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
 }
@@ -740,7 +741,7 @@ SERVICES
 
   border-color: #38bdf8;
 
-  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.25);
+  /* box-shadow: 0 25px 60px rgba(37, 99, 235, 0.25); */
 }
 
 .service-icon {
