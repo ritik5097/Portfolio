@@ -693,7 +693,7 @@ SERVICES
 
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
-  gap: 35px;
+  gap: 20px;
 }
 
 .service-card {
