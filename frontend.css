@@ -582,11 +582,11 @@ ABOUT
   position: relative;
 }
 
-.section-subtitle {
+.section-subtitle-1 {
   display: flex;
   align-items: center;
   gap: 18px;
-  justify-content: center;
+  
   text-align: center;
   margin-bottom: 15px;
 
